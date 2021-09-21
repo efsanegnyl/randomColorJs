@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  border: none;
+}
+*:focus {
+  outline: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+body .alert {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 18px 42px;
+  color: #fff;
+  background-color: #000;
+  font-size: 18px;
+  border-radius: 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all;
+}
+@media only screen and (max-width: 600px) {
+  body .alert {
+    font-size: 10px;
+    padding: 10px 26px;
+  }
+}
+body .alert.active {
+  top: 20px;
+  opacity: 1;
+  visibility: visible;
+}
+body h1 {
+  font-size: 50px;
+  letter-spacing: 5px;
+  color: #fff;
+  text-shadow: 1px 8px 4px #000;
+  letter-spacing: 10px;
+}
+@media only screen and (max-width: 600px) {
+  body h1 {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+}
+body .code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+body .code .copy {
+  width: 180px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background-color: #000;
+  font-weight: 400;
+  border-radius: 50px;
+  border: 3px solid;
+  cursor: pointer;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  border-radius: 99px;
+  transform: translateX(-50%);
+  z-index: 9;
+  font-size: 12px;
+}
+@media only screen and (max-width: 600px) {
+  body .code .copy {
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    top: -25px;
+  }
+}
+body .code .codeText {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: #000;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 40px;
+  background-color: #fff;
+  box-shadow: 5px 10px 20px #000;
+}
+@media only screen and (max-width: 600px) {
+  body .code .codeText {
+    width: 250px;
+    height: 80px;
+    line-height: 85px;
+    font-size: 20px;
+  }
+}
+body .code input {
+  display: none;
+}
+body button {
+  padding: 1rem 1rem;
+  height: 60px;
+  color: #E5E6E7;
+  border-radius: 30px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-color: #000;
+  box-shadow: 5px 5px 50px #000;
+}
+@media only screen and (max-width: 600px) {
+  body button {
+    font-size: 12px;
+    padding: 14px;
+    letter-spacing: 0;
+  }
+}
+body button:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
