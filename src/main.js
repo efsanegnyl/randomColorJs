@@ -47,7 +47,8 @@ function getNewColor() {
   copyEl.style.borderolor = color;
 
   codeText.innerHTML = color
-  inputText.value = color
+  inputText.value = color    
+  btn.blur()
 }
 
 
